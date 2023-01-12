@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -13,4 +15,123 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+@media only screen and (min-width: 500px) {
+  .calculator {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .calculator {
+    width: 650px;
+  }
+}
+
+.input-container {
+  background-color: #8ca9ff;
+  width: 80%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+.input-container > span {
+  padding: 8px;
+}
+
+.keys {
+  height: 280px;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.symbol {
+  width: calc(100% / 5);
+  display: flex;
+  justify-content: center;
+  background-color: #ffb834;
+  padding: 0;
+}
+
+.number > span,
+.symbol > span {
+  width: calc(100% / 5);
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.15s;
+}
+
+.symbol > span {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid #919191;
+}
+
+.number > span {
+  background-color: #cacaca;
+  border: 1px solid #919191;
+}
+
+.number > span:hover {
+  background-color: #dfdfdf;
+}
+
+.symbol > span:hover {
+  background-color: #ffdb98;
+}
+
+#span-wide {
+  width: calc(100% / 2.5);
 }
