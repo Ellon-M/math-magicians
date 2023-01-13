@@ -56,7 +56,7 @@ body {
   font-size: 20px;
 }
 
-.input-container > span {
+.input-container > button {
   padding: 8px;
 }
 
@@ -88,14 +88,14 @@ body {
   width: calc(100% / 5);
   display: flex;
   justify-content: center;
-  background-color: #ffb834;
   padding: 0;
 }
 
-.number > span,
-.symbol > span {
+.number > button,
+.symbol > button {
   width: calc(100% / 5);
   height: 80px;
+  background-color: #ffb834;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -106,7 +106,7 @@ body {
   transition: 0.15s;
 }
 
-.symbol > span {
+.symbol > button {
   width: 100%;
   height: 80px;
   text-align: center;
@@ -119,19 +119,19 @@ body {
   border: 1px solid #919191;
 }
 
-.number > span {
+.number > button {
   background-color: #cacaca;
   border: 1px solid #919191;
 }
 
-.number > span:hover {
+.number > button:hover {
   background-color: #dfdfdf;
 }
 
-.symbol > span:hover {
+.symbol > button:hover {
   background-color: #ffdb98;
 }
 
-#span-wide {
+#button-wide {
   width: calc(100% / 2.5);
 }
