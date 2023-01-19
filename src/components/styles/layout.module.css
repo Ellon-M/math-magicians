@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.navHeading {
+  display: none;
+  width: 100%;
+  color: #fb0;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .navHeading {
+    display: flex;
+    margin-left: 7rem;
+    padding: 5px;
+    font-size: 20px;
+  }
+}
+
+.navLinks {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink {
+  font-weight: 600;
+  font-size: 20px;
+}
