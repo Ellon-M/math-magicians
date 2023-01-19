@@ -1,0 +1,32 @@
+.quoteContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  text-align: center;
+}
+
+.quote {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 890px) {
+  .quoteContainer {
+    padding: 3rem;
+  }
+
+  .quote {
+    font-size: 28px;
+  }
+}
+
+.quoteContainer > span {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 19px;
+}
